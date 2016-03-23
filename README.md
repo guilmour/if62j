@@ -8,4 +8,3 @@ Trabalhos e projetos para a disciplina de Oficina de Integração I da Universid
 
 more credits in the source-code too.<br>
 <a href="http://guilmour.com"> guilmour.com </a> / <a href="http://twitter.com/guilmour">  twitter.com/guilmour </a>
-R
