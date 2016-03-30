@@ -1,0 +1,317 @@
+\documentclass[12pt, a4paper]{article}	
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\usepackage{lipsum}
+\usepackage{geometry}
+\usepackage{amsfonts}
+\newcommand{\Z}{\mathbb{Z}}
+\newlength{\tabcont}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\newcommand\tab[1][1cm]{\hspace*{#1}}
+
+
+
+
+\newcommand{\linespacing}{1.5}
+\renewcommand{\baselinestretch}{\linespacing}
+
+\geometry{a4paper,left=3cm,right=2cm,bottom=3.5cm,top=2cm, headsep=1cm, footskip=1.5cm}
+
+\title{Lista de Exercícios 1}
+\author{Guilmour Rossi}
+\date{Março, 2016}
+
+
+
+\begin{document}     
+
+\begin{minipage}{20cm}
+\begin{wrapfigure}{l}{2.5cm}
+\includegraphics[width=2.5cm]{ex_scientia_artis.png}  
+\end{wrapfigure}
+
+\textbf{\\Universidade Tecnológica Federal do Paraná\\
+	Curso de Engenharia de Computação\\
+    CSD21 - Matemática Discreta \\
+    Prof. Luiz Celso Gomes Jr.      \\}
+
+\end{minipage}
+
+
+	\vskip15mm
+	    
+    
+       \begin{flushright}
+       
+      
+
+        \textbf{Lista de Exercícios} \texttt{\#}\textbf{1} 
+		{\\Guilmour H. D. Rossi\texttt{$^1$} \\}
+        {Março, 2016.\\}		        
+   \end{flushright}  
+   
+
+    \vskip5mm
+\begin{flushleft}
+
+\textbf{I) Usando os métodos de demonstração direta, contraposição ou contradição prove que: \\}
+\vskip5mm
+
+\textbf{\textbf{\texttt{A)}} A soma de dois números pares é par.\\}
+\textsf{1. Prova: Suponha que somamos dois números pares.
+\\2. Logo, $a+b $, com $a = 2k$ e $b = 2k'$  para  $a, b, k$ e $k' \in \Z $. 
+\\3. Então, $a+b = 2k + 2k'$. 
+\\4. Assim, $a+b = 2(k + k')$.
+\\5. Logo,  $a+b = 2c$, com $c = (k + k')$ e $c \in \Z$.
+\\6. Portanto, o resultado é par.}
+
+\vskip10mm
+
+\textbf{\textbf{\texttt{B)}} O produto de dois números pares é par.\\}
+\textsf{1. Prova: Suponha que multiplicamos dois números pares.
+\\2. Logo, $a \cdot b$, com $a = 2k$ e $b = 2k'$  para  $a, b, k$ e $k' \in \Z $. 
+\\3. Então, $a \cdot b = (2k) \cdot (2k')$. 
+\\4. Assim, $a \cdot b = 2(2 \cdot k \cdot k') $.
+\\5. Logo, $a \cdot b = 2c $, onde $ c = (2 \cdot k \cdot k')$ e $c \in \Z$.
+\\6. Portanto, o resultado é par.}
+
+\vskip13mm
+\begin{flushright}
+	\texttt{\footnotesize $^1$contato@guilmour.com}
+\end{flushright}
+\pagebreak
+
+
+\textbf{\textbf{\texttt{C)}} $n!<n^n.$ Se fatorarmos um número $n$, então ele será menor que $n^n$.\\}
+\textsf{1. Prova: Supomos que $n!$ seja maior que $n^n$, em todo $n>0$, para que $(n-1)$ e $n \in \Z$.
+\\2. Logo, $n! > n^n$.
+\\3. Então, $n! - n^n > 0$.
+\\4. Onde, $n! = n \cdot (n-1)!$ e $n^n = n \cdot (n^{n-1})$.
+\\5. Assim $(n \cdot (n-1)!) - (n \cdot (n^{n-1}) > 0$.
+\\6. Logo, $(n \cdot (k)) - (n \cdot (k')) > 0$, com $ k=(n-1)!$ e $k'= n^{n-1}$.
+\\7. Então, $n \cdot (k-k') > 0$.
+\\8. Se $n > 0$, obrigatoriamente $k-k'> 0 $.
+\\9. Logo, $(n-1)! - n^{n-1} > 0$ sempre.
+\\10. Logo, $0 - 1 > 0$, se aplicarmos o caso básico de $n = 1$.
+\\12. O que é um absurdo, pois $-1 \ngtr 0$.
+\\13. Portanto, $n!<n^n$.}
+
+\vskip8mm
+
+\textbf{\textbf{\texttt{D)}} A soma de três inteiros consecutivos é divisível por 3.\\}
+\textsf{1. Prova: Supomos a soma de três números inteiros.
+\\2. Então, $ n + (n + 1) + (n + 2)$, com $n \in \Z$.
+\\3. Assim, $ n + (n + 1) + (n + 2) = (n+n+n) + (1+2)$, associativamente.
+\\4. Logo,  $ n + (n + 1) + (n + 2) = (3n) + 3$.
+\\5. Logo, $ n + (n + 1) + (n + 2) = 3(n+1)$.
+\\6. Então, $n + (n + 1) + (n + 2) = 3k $, tal que $ k = (n+1)$ e $k \in \Z$.
+\\7. Portanto, a soma de três números inteiros consecutivos é divisível por $3$. }
+
+
+
+\vskip8mm
+\textbf{\textbf{\texttt{E)}} Se $n^2$ é ímpar então $n$ é ímpar.\\}
+\textsf{1. Prova: Suponha que $n$ é par.
+\\2. Logo, $n=2k$, com $n$ e $k \in \Z$
+\\3. Então, $n^2 = (2k)^2$.
+\\4. Assim, $n^2 = (2k \cdot 2k)$.
+\\5. Onde, $n^2 = 2(2 \cdot k^2)$.
+\\6. Sendo, $n^2 = 2c$, com $c = (2 \cdot k^2)$ e $c \in \Z$.
+\\7. Portanto, $n^2$ também é par. Provando por contraposição que se $n^2$ é ímpar então $n$ também será ímpar.}
+
+\pagebreak
+
+\textbf{\textbf{\texttt{F)}} Se $x \cdot y$ é ímpar então $x$ e $y$ são ambos ímpares.\\}
+\textsf{1. Prova: Supomos que $x$ e $y$ são pares.
+\\2. Logo, $x = 2k$ e $y = 2k'$, com $x, y, k$ e $k' \in \Z$.
+\\3. Então, $x \cdot y = 2k \cdot 2k'$.
+\\4. Logo, $x \cdot y = (2 \cdot 2) \cdot (k \cdot k')$.
+\\5. Assim, $x \cdot y = 2(2 \cdot k \cdot k')$.
+\\6. Onde, $x \cdot y = 2c$, tal que $c = (2 \cdot k \cdot k')$ e $c \in \Z$.
+\\7. Portanto $x \cdot y$ também é par. Então, por contraposição, temos que se o resultado de $x \cdot y$ é ímpar, logo $x$ e $y$ também são ambos ímpares.}
+
+
+
+
+\vskip9mm
+\textbf{\textbf{\texttt{G)}} Inteiros consecutivos não podem ser ambos pares.\\}
+\textsf{1. Prova: Supomos que inteiros consecutivos são pares. 
+\\2. Então, $n = 2k$ e $(n+1) = 2k'$, com $n, k$ e $k' \in \Z$.
+\\3. Logo, $n = 2k$ e $((2k)+1) = 2k'$, substituindo.
+\\4. Assim, $(2k + 1) = 2k'$.
+\\5. Onde temos uma contradição; já que um número par não pode ser um número ímpar.}
+
+\vskip10mm
+\textbf{II) Prove usando indução matemática que: \\}
+\vskip5mm
+\textbf{\textbf{\texttt{A)}} 1 + 3 + 5 + ... + (2n - 1) = n$^{2}$.\\}
+\textsf{1. Passo básico: $P(n) = n^2$. $P(1) = 1^2 =1$. 
+\\2. Hipótese: $P(k)$ é verdadeiro $ \forall k \geq 1 $ com $k \in \Z$.
+\\3. Mostrar que $P(k+1)= 1+3+5+...+(2k-1) + (2(k+1) -1) =$ $\boxed{(k+1)^2}$.
+\\3.1. $P(k+1)$ $=1+3+5+...+(2k-1)+(2(k+1)-1)$.
+\\3.2.\tab \tab[0.75cm] $= k^2+(2(k+1)-1)$.
+\\3.3.\tab \tab[0.75cm] $= k^2+(2k+2-1)$.
+\\3.4.\tab \tab[0.75cm] $=k^2+2k+1$.
+\\3.5.\tab \tab[0.75cm]  $= \boxed{(k+1)^2}$.}
+
+\pagebreak
+
+\textbf{\textbf{\texttt{B)}} 1 + 2 + 2$^2$ + ... + 2$^n$ = 2$^{n+1}$ - 1.\\}
+\textsf{1. Passo básico: $P(n) = 2^{n+1} - 1$. $P(1) = 2^{1+1} - 1 = 2^{2} - 1 = 3 =1+2$.
+\\2. Hipótese: $P(k)$ é verdadeiro $ \forall k \geq 1 $ com $k \in \Z$.
+\\3. Mostrar que $P(k+1) = 1 +2+2^2+...+2^n + 2^{n+1}=2^{(n+1)+1}-1= \boxed{2^{n+2}-1}$.
+\\3.1. $P(k+1)$ $=1 +2+2^2+...+2^n + 2^{n+1}$.
+\\3.2.\tab \tab[0.75cm] $= 2^{n+1}-1 + 2^{n+1}$.
+\\3.3.\tab \tab[0.75cm] $= 2^{n+1} + 2^{n+1} - 1$.
+\\3.4.\tab \tab[0.75cm] $= 2(2^{n+1}) - 1$.
+\\3.5.\tab \tab[0.75cm] $= 2^{n+1+1} - 1$.
+\\3.6.\tab \tab[0.75cm] $= \boxed{2^{n+2} - 1}$.}
+
+\vskip10mm
+
+\textbf{\textbf{\texttt{C)}}1 + 2 + 3 + ... + n = $\frac{n(n+1)}{2}$.\\}
+\textsf{1. Passo básico: $P(n) = \frac{n(n+1)}{2}$. $P(1) = \frac{1(1+1)}{2} = \frac{2}{2} = 1$.
+\\2. Hipótese: $P(k)$ é verdadeiro $ \forall k \geq 1 $ com $k \in \Z$.
+\\3. Mostrar que $P(k+1) = 1+2+3+...+n+(n+1) = \frac{(n+1)((n+1)+1)}{2} = \boxed{\frac{(n+1)(n+2)}{2}}$.
+\\3.1. $P(k+1) = 1+2+3+...+n+(n+1)$.
+\\3.2.\tab \tab[0.75cm] $= \frac{n(n+1)}{2}+(n+1)$.
+\\3.3.\tab \tab[0.75cm] $= \frac{n(n+1) + 2(n+1)}{2}$.
+\\3.4.\tab \tab[0.75cm] $= \frac{n^2+n + 2n + 2}{2}$.
+\\3.5.\tab \tab[0.75cm] $= \frac{n^2+3n + 2}{2}$.
+\\3.6.\tab \tab[0.75cm] $= \boxed{\frac{(n+1)(n+2)}{2}}$.}
+
+\vskip10mm
+
+\textbf{\textbf{\texttt{D)}}2$^n >$ n.\\}
+\textsf{1. Passo básico: $P(n) = 2^n > n$. $P(1) = 2^1 > 1 = 2 > 1$.
+\\2. Hipótese: $P(k) = 2^k > k$. $ \forall k \geq 1 $ com $k \in \Z$.
+\\3. Mostrar que $P(k+1) = \boxed{2^{k+1} > (k+1)}$.
+\\3.1. $P(k) = 2^k > k$.
+\\3.2. \tab[0.855cm] $= 2 \cdot 2^k > 2 \cdot k$.
+\\3.3. \tab[0.855cm] $= 2^{k+1} > k+k $.
+\\3.4. \tab[0.855cm] $= \boxed{2^{k+1} > (k+1)} $, já que $k \geq 1$.}
+
+\pagebreak
+
+\textbf{\textbf{\texttt{E)}}2$^{2n}$ - 1 é divisível por 3.\\}
+\textsf{1. Passo básico: $P(n) = 2^{2n} -1$; $P(1) = 2^{2\cdot(1)} -1 = 4 - 1 = 3$; $\frac{3}{3} = 1$.
+\\2. Hipótese: $P(k) = 2^{2k} -1 = 3b$, $ \forall b,k \geq 1 \in \Z$.
+\\3. Mostrar que $P(k+1) = 2^{2(k+1)} - 1 = \boxed{3c}$, com $c \in \Z$.
+\\3.1. $P(k+1) = 2^{2(k+1)} - 1$.
+\\3.2.\tab \tab[0.75cm] $= 2^{2k + 2} - 1$.
+\\3.3.\tab \tab[0.75cm] $= 2^{2k} \cdot 2^{2} - 1$.
+\\3.4.\tab \tab[0.75cm] $= 2^{2k}  - 1 \cdot 2^{2}$.
+\\3.5.\tab \tab[0.75cm] $= 3b \cdot 2^{2}$, da nossa hipótese indutiva.
+\\3.6.\tab \tab[0.75cm] $= 3b \cdot 2 \cdot 2$.
+\\3.7.\tab \tab[0.75cm] $= 3(b \cdot 2 \cdot 2)$.
+\\3.6.\tab \tab[0.75cm] $= \boxed{3c}$, com $c = (b \cdot 2 \cdot 2)$.}
+
+\vskip10mm
+
+\textbf{\textbf{\texttt{F)}} n$^{2}$ $>$ 3n para n $\geq$ 4.\\}
+\textsf{1. Passo básico: $P(n) = n^2 > 3n$; $P(4) = 4^2 > 3(4) = 16 > 12$.
+\\2. Hipótese: $P(k) = k^2 > 3k$, $ \forall k \geq 4 $ com $k \in \Z$.
+\\3. Mostrar que $(k+1)^2 > \boxed{3(k+1)}$.
+\\3.1. $P(k+1) = (k+1)^2$.
+\\3.2.\tab \tab[0.75cm] $=k^2 + 2k + 1 $.
+\\3.3.\tab \tab[0.75cm] $> 3k+2k+1 $, pela hipótese da indução.
+\\3.4.\tab \tab[0.75cm] $\geq 3k+8+1 $, pois $k \geq 4$.
+\\3.5.\tab \tab[0.75cm] $\geq 3k+9 $.
+\\3.6.\tab \tab[0.75cm] $> 3k+9-6 $.
+\\3.7.\tab \tab[0.75cm] $> 3k+3 $.
+\\3.8.\tab \tab[0.75cm] $> \boxed{3(k+1) }$.}
+
+\pagebreak
+
+\textbf{\textbf{\texttt{G)}} 2$^{n+1}$ $<$ 3$^n$ para n $>$ 1.\\}
+\textsf{1. Passo básico: $P(n) = 2^{n+1} < 3^n$; $P(2) = 2^{2+1} < 3^2 = 2^3 < 3^2 = 8 < 9$.
+\\2. Hipótese: $P(k) = 2^{k+1} < 3^k$, $\forall k > 1 \in \Z$.
+\\3. Mostrar que $P(k+1) = 2^{(k+1)+1} < 3^{k+1} = \boxed{2^{k+2} < 3^{k+1}}$.
+\\3.1. $P(k) = 2^{k+1} < 3^k$.
+\\3.2 \tab[1.05cm] $= 2 \cdot 2^{k+1} < 2 \cdot 3^k $.
+\\3.3 \tab[1.05cm] $= 2^{k+1+1} < 3^{k+1} $.
+\\3.4 \tab[1.05cm] $= \boxed{2^{k+2} < 3^{k+1}} $.}
+
+\vskip10mm
+
+\textbf{\textbf{\texttt{H)}} 1$^3$ + 2$^3$ + 3$^3$ + ... n$^3$ = $\frac{n^2(n+1)^2}{4}$.\\}
+\textsf{1. Passo básico: $P(n) = \frac{n^2(n+1)^2}{4}$; $P(1) = \frac{1^2(1+1)^2}{4} = \frac{1(2)^2}{4} = \frac{4}{4} = 1 $.
+\\2. Hipótese: $P(k) = \frac{k^2(k+1)^2}{4}$ é verdadeiro $\forall k \geq 1$.
+\\3. Mostrar que $P(k+1) = 1^3 + 2^3 + 3^3 +$ ... $k^3 + (k+1)^3 = \frac{(k+1)^2((k+1)+1)^2}{4} = \frac{(k+1)^2(k+2)^2}{4}$.
+\\3.1. $P(k+1) = 1^3 + 2^3 + 3^3 +$ ... $k^3 + (k+1)^3$.
+\\3.2.\tab \tab[0.76cm] $=\frac{k^2(k+1)^2}{4}+ (k+1)^3$, pela hipótese indutiva.
+\\3.3 \tab \tab[0.76cm] $= (k+1)^2(\frac{k^2}{4} + k + 1)$.
+\\3.4 \tab \tab[0.76cm] $= (k+1)^2(\frac{k^2+4k+4}{4})$.
+\\3.5 \tab \tab[0.76cm] $= \boxed{\frac{(k+1)^2 \cdot (k+2)^2}{4}}$.}
+
+
+\pagebreak
+\textbf{III) Resolva as relações de recorrência: \\}
+\vskip5mm
+\textbf{\textbf{\texttt{A)}} S(1) = 1 \tab S(n) = S(n - 1) + 2n - 1 para n $\geq$ 2.\\}
+\textsf{1. Expandir: $S(2) = S(1) + 2 \cdot (2) - 1 = 4 = 2^2$. 
+\\ \tab 1.1. \tab[0.37cm] $S(3) = S(2) + 2 \cdot (3) - 1 = 4 + 5 = 9 = 3^2$.
+\\ \tab 1.2. \tab[0.37cm] $S(4) = S(3) + 2 \cdot (4) - 1 = 9 + 7 = 16 = 4^2$.
+\\ \tab 1.3. \tab[0.37cm] $S(5) = S(4) + 2 \cdot (5) - 1 = 16 + 9 = 25 = 5^2$.
+\\2. Supor: $S(n) = n^2$.
+\\3. Verificar: 
+\\ \tab 3.1. Passo básico: $P(n) = n^2$. $P(2) = 2^2 = 4$.
+\\ \tab 3.2. Hipótese: $P(k) = k^2$, $ \forall k \geq 2$ e $k \in \Z$.
+\\ \tab 3.3. Mostrar que $P(k+1) = \boxed{(k+1)^2}$.
+\\ \tab \tab 3.3.1. $P(k+1) = P((k+1) - 1) + 2(k+1) - 1$.
+\\ \tab \tab 3.3.2. \tab \tab[0.6cm] $= P(k) + 2k + 2 - 1$.
+\\ \tab \tab 3.3.3. \tab \tab[0.6cm] $= k^2 + 2k + 1$, pela hipótese indutiva.
+\\ \tab \tab 3.3.4. \tab \tab[0.6cm] $= \boxed{(k + 1)^2}$.}
+
+\vskip10mm
+
+\textbf{\textbf{\texttt{B)}} S(1) = 2 \tab S(n) = 2S(n - 1) + 2$^n$ para n $\geq$ 2.\\}
+\textsf{1. Expandir: $S(2) = 2 \cdot S(1) + 2^2 = 2 \cdot (2) + 2^2 = 4 + 4 = 8$. 
+\\ \tab 1.1. \tab[0.37cm] $ S(3) = 2 \cdot S(2) + 2^3 = 2 \cdot (8) + 2^3 = 16 + 8 = 24 $.
+\\ \tab 1.2. \tab[0.37cm] $ S(4) = 2 \cdot S(3) + 2^4 = 2 \cdot (24) + 2^4 = 48 + 16 = 64 $.
+\\ \tab 1.3. \tab[0.37cm] $ S(5) = 2 \cdot S(4) + 2^5 = 2 \cdot (64) + 2^5 = 128 + 32 = 160 $.
+\\2. Supor: $S(n) = 2^n \cdot n$.
+\\3. Verificar: 
+\\ \tab 3.1. Passo básico: $P(n) = 2^n \cdot n$. $ P(2) = 2^2 \cdot (2) = 8 $.
+\\ \tab 3.2. Hipótese: $P(k) = 2^k \cdot k $, $ \forall k \geq 2$ e $k \in \Z$.
+\\ \tab 3.3. Mostrar que $P(k+1) = \boxed{ 2^{k+1} \cdot (k+1) }$.
+\\ \tab \tab 3.3.1. $P(k+1) = 2 \cdot P((k+1)-1) + 2^{k+1}$.
+\\ \tab \tab 3.3.2. \tab \tab[0.6cm] $= 2 \cdot P(k) + 2^{k+1}$.
+\\ \tab \tab 3.3.3. \tab \tab[0.6cm] $= 2 \cdot (2^k \cdot k) + 2^{k+1}$, pela hipótese indutiva.
+\\ \tab \tab 3.3.4. \tab \tab[0.6cm] $= 2^{k+1} \cdot k + 2^{k+1}$.
+\\ \tab \tab 3.3.4. \tab \tab[0.6cm] $= \boxed{2^{k+1} \cdot (k+1)}$.}
+
+
+\vskip10mm
+
+\textbf{\textbf{\texttt{C)}} S(1) = 1 \tab S(n) = 2S(n - 1) + 1 para n $\geq$ 2.\\}
+\textsf{1. Expandir: $S(2) = 2 \cdot S(1) + 1 = 2 \cdot (1) + 1 = 3 = 2^2-1$. 
+\\ \tab 1.1. \tab[0.37cm]  $S(3) = 2 \cdot S(2) + 1 = 2 \cdot (3) + 1 = 7 = 2^3-1$.
+\\ \tab 1.2. \tab[0.37cm]  $S(4) = 2 \cdot S(3) + 1 = 2 \cdot (7) + 1 = 15 = 2^4-1$.
+\\ \tab 1.3. \tab[0.37cm]  $S(5) = 2 \cdot S(4) + 1 = 2 \cdot (15) + 1 = 31 = 2^5-1$.
+\\2. Supor: $S(n) = 2^n-1$.
+\\3. Verificar: 
+\\ \tab 3.1. Passo básico: $P(n) = 2^n-1 = 2^2-1 = 3$.
+\\ \tab 3.2. Hipótese: $P(k) = 2^k-1$, $ \forall k \geq 2$ e $k \in \Z$.
+\\ \tab 3.3. Mostrar que $P(k+1) = \boxed{ 2^{k+1} - 1 }$.
+\\ \tab \tab 3.3.1. $P(k+1) = 2 \cdot P((k+1)-1) + 1$.
+\\ \tab \tab 3.3.2. \tab \tab[0.6cm] $= 2 \cdot P(k) + 1$.
+\\ \tab \tab 3.3.3. \tab \tab[0.6cm] $= 2 \cdot (2^k-1) + 1$, pela hipótese indutiva.
+\\ \tab \tab 3.3.4. \tab \tab[0.6cm] $= 2 \cdot 2^k -2 + 1$.
+\\ \tab \tab 3.3.4. \tab \tab[0.6cm] $= \boxed{2^{k+1} - 1}$.}
+
+
+ 
+ 
+\end{flushleft}   
+
+
+
+
+
+
+
+
+\end{document}
